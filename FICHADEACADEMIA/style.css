@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #c3cbdc;
+    background-image: linear-gradient(360deg, #c3cbdc 0%, #edf1f4 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*header*/
+header {
+    background:whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7);
+    display: flex;
+   justify-content: space-between;
+}
+  .dadospessoais{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-left: 20vh;
+  }
+
+  h2{ 
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    width: 30%;
+  }
+
+  .tptreino {
+    opacity: 0.5;
+    background: linear-gradient(180deg, #00fbb5 0%, #00a174 74%);
+    border-color: whitesmoke;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1vh;
+  }
+  .tptreino:hover {
+    opacity: 1.0;
+  }
+  select.tptreino option {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #00a174;
+  }
+  #nome{
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7);
+    background:whitesmoke;
+    border-radius: 12px;
+    font-size: 20px;
+    text-align: center;
+    border-width: 1px;
+  }
+  #prof{
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7);
+    background:whitesmoke;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-left: 1vh;
+    text-align: center;
+
+    border-width: 1px;
+  }
+  .obj{
+    opacity: 0.5;
+    background: linear-gradient(180deg, #00fbb5 0%, #00a174 74%);
+    border-color: whitesmoke;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 1vh;
+  }
+  .obj:hover{
+    opacity: 1.0;
+  }
+  select.obj option {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #00a174;
+  }
+  /*------------------------------------------------------------*/
+  .container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16vh;
+    height: 100%;
+    width: 100%;
+  }
+  .table {
+    width: 80vh;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.7);
+}
+.gridnumb {
+  width: 10vh;
+  display: grid;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+.textnumb {
+  text-align: center;
+  width: 8vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 20px;
+}
+.gridname {
+  width: 25vh;
+  display: grid;
+  justify-items: center;
+}
+.textname {
+  text-align: center;
+  width: 23vh;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 20px;
+}
+a{
+  font-size: 20px;
+  font-weight: bold;
+}
+.empty{
+  height: 27px;
+}
+.dtr{
+  margin-top: 1px;
+}
+  /*botão ONOFF*/
+  
+.onoffswitch {
+  margin-top: 10px;
+  position: relative;   
+  width: 55px;
+  -webkit-user-select:none;
+   -moz-user-select:none; 
+   -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.onoffswitch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  height: 18px; padding: 0; line-height: 20px;
+  border: 0px solid #FFFFFF; border-radius: 30px;
+  background-color: #9E9E9E;
+}
+.onoffswitch-label:before {
+  content: "";
+  display: block; width: 30px; margin: -5px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 31px;
+  border-radius: 30px;
+  box-shadow: 0 6px 12px 0px #757575;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+  background: linear-gradient(180deg, #00fbb5 0%, #00a174 74%);
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  background: linear-gradient(180deg, #00fbb5 0%, #00a174 74%);
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+  right: 0px; 
+  background: linear-gradient(180deg, #00fbb5 0%, #00a174 74%);
+  box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
+}
+/*--------------------------------------------------------------*/
